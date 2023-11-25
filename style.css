@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background: linear-gradient(160deg, rgb(212, 42, 85), rgb(43, 161, 229));
+    
+}
+.hero-heading{
+    width: 400px;
+}
+.hero-title{
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 60px;
+}
+.hero-title h1{
+    font-size: 35px;
+}
+button{
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.white-button:hover{
+    background-color: black;
+    color: white;
+}
+.default-button{
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+}
+.default-button:hover{
+    color: black;
+    border-color: black;
+}
+.hero-image{
+    flex: 40%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.hero-image > div{
+    object-fit: cover;
+    max-width: 300px;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+#features{
+    margin: 6px;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#features .block{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 0.30rem;
+    background-color: rgb(245, 241, 241, 0.6);
+    box-shadow: 5px 5px 10px rgb(202, 200, 200);
+    padding: 25px;
+    border-radius: 5px;
+}
+.block .big{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.block .small{
+    font-size: 14px;
+}
+.fa-regular, .fa-solid{
+    padding-top: 3px;
+}
+#before-testimonial{
+    display: flex;
+    margin: 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#before-testimonial img{
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 20px 0px 10px;
+}
+#testimonial{
+    margin: 50px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#testimonial img{
+   max-width: 200px;
+   height: 30px;
+}
+#pricing{
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 10px;
+}
+#pricing > div{
+    text-align: center;
+}
+
+#pricing > div > h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#pricing > div > p{
+    color: rgb(100, 95, 95);
+}
+
+.price-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price-section .box{
+    border: 1px solid rgb(215, 206, 206);
+    box-shadow: 2px 2px 5px rgba(172, 168, 168, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+}
+.price-section .first div > button{
+    border: 1px solid black;
+    color: black;
+    background-color: inherit;
+}
+.first > div > button:hover{
+    background-color: black;
+    color: white;
+}
+.price-section .third #special{
+    background-color: black;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+} 
+.price-section .third{
+    border: 1px solid black;
+}
+
+.box > p{
+    font-size: 20px;
+    padding: 8px 20px;
+    font-weight: 600;
+}
+
+.box > div{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box > div .price{
+    font-size: 30px;
+    font-weight: 700;
+}
+.box > div .pricing-features{
+    line-height: 20px;
+}
+.box > div .price span{
+    opacity: 0.6;
+    font-size: 27px;
+}
+
+.price-section .box button{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+#footer{
+    display: flex;
+    gap: 3rem;
+    padding: 20px;
+    background: linear-gradient(160deg, rgb(212, 42, 85), rgb(43, 161, 229));
+    flex-direction: column;
+}
+#footer .section1{
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+#footer .section2{
+    flex: 60%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.section2 div{
+    display: flex;
+    flex-direction: column;
+}
+.section2 div p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.section2 div a{
+    text-decoration: none;
+    color: black;
+}
+.section2 .automatic{
+    visibility: hidden;
+    position: absolute;
+}
+@media (max-width: 350px){
+    .price-section .box{
+        width: 100%;
+    }
+}
+@media (min-width: 740px){
+    #title{
+        flex-direction: row;
+    }
+    .hero-image{
+        justify-content: flex-start;
+    }
+    #features{
+        flex-direction: row;
+    }
+    #testimonial{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .price-section{
+        flex-direction: row;
+    }
+    #footer{
+        flex-direction: row;
+    }
+    #footer .section2{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .section2 .automatic{
+        visibility: visible;
+        position: relative;
+    }
+}
